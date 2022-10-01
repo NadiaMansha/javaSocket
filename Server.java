@@ -11,7 +11,7 @@ class Server{
 			BufferedReader in= new BufferedReader(new InputStreamReader(soc.getInputStream())); 
 				String str=in.readLine();
 				PrintWriter out= new PrintWriter(soc.getOutputStream(),true);
-				out.println("Wa alaikum asalam" + str);
+				out.println("Wa alaikum asalam" + " "  + str);
 				ss.close();
 		}
 		catch(IOException i)
